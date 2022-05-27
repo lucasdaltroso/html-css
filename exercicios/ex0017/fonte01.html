@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas:
+                cm, mm, in (polegada), px (pixel), /pt(ponto), pc (paica)/ -> medidas da tipografia, usadas no papel.
+
+            Medidas Relativas:
+               em (altura relativa ao "M" maiúculo de uma fonte), ex (relativo a altura "x" de uma fonte), rem (tipo em so q relativo a fonte configurada no body), vw (largura da viewport -> largura da tela do dispositivo), vh (altura da viewport), % (porcentagem).
+
+            Recomendação de uso da W3C: use apenas em, px.
+            */
+           font-size: 1.2em;
+           /*16px é o tamanho padrão da fonte.*/
+           /*16px = 1em (1em: tamanho da letra normalmente)*/
+           /*A melhor opção é o em, já que o px pode variar de acordo com cada dispositivo.*/
+
+           font-weight: ;   
+            /*lighter - normal - bold - bolder ou de 100 -900 (pulando de 100 em 100. EX: 200, 500)*/
+           font-style: italic; 
+           text-decoration: underline;
+        
+            /*weight = peso
+            widht = largura
+            height = altura */
+        }
+        h1{
+           /*font-family: serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;*/
+
+            /*shorthand font
+            font-style -> font-weight -> font-size -> font-family*/
+            font: italic bolder 3em serif;
+        }
+        h2 {
+            font: bold 2em serif;
+        }
+    </style>
+</head>
+<body>      
+    <h1>Trabalhando com Fontes</h1> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ut blanditiis sed. Dolorem labore esse deserunt consequatur et, sunt ipsam, aliquam architecto perspiciatis eum nostrum recusandae. Aspernatur quas vitae Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod animi iusto saepe. Quae dolor atque alias maiores minima veritatis dolores inventore, blanditiis, minus placeat cupiditate rerum ex pariatur sunt dolorem!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus esse unde fugit ipsum reprehenderit itaque quidem magnam voluptatum id! Delectus nihil omnis vel possimus consequatur, assumenda doloremque ipsam labore dolorem.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dolorum ab, dignissimos, esse totam temporibus cum a error perspiciatis tempore quisquam id molestiae modi alias! Inventore, fugiat eius. Unde, deleniti?</p>
+
+</body>
+</html>

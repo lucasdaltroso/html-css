@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title><link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color:lightskyblue ;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color:  white;
+            border: 1px solid black;
+            height: 115px;  
+            padding-right: 10px;
+            padding-left: 10px;  
+
+            border-radius: 10px;
+        }
+
+        nav > a {
+            color: red;
+            margin-right: 10px;
+            text-decoration: none;
+            background-color: lightgray;
+            box-shadow: -3px -2px 3px 0px rgba(0, 0, 0, 0.267);
+      }
+
+        nav > a:hover {
+            color: black ;
+            text-decoration: underline;
+
+        }
+
+        h1 {
+            margin-top: 16px;
+        }
+
+        section {
+            background-color: white;
+            border: 1px solid black;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+            /*
+            Shorhand: 
+            border-radius: 10px 20px 10px 30px;
+            */
+        }
+
+        aside {
+            background-color: lightgray;
+            font-weight: bold;
+            box-shadow: -1px 1px 4px black;
+            /*box-shadow: (deslocamento horizontal) (deslocamento vertical) (esbaçamento = blur)  (espalhamento = spread) (cor da sombra)*/
+            /*Sombra é sempre black, só mexemos na transparência da cor (opção dada pelo VsCode)*/
+            /*Outset- sombra para fora (não escreve na linha do código);
+            Inset- sombra para dentro (primeiro elemento escrito na linha do código). */
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        footer {
+            background-color: blue;
+            color: white;
+            border: 2px solid  black;
+            padding: 10px;
+        }
+
+        footer > p {
+            text-align: center;
+            margin: 1px;
+            font-weight: bolder;
+        }
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 1px solid black;
+            background-color: white;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- header = cabeçalho-->
+    <header>
+        <h1>Sobre Física</h1>
+        <!-- <nav> = representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação.-->
+        <nav>
+            <a href="caixa01.html" hreflang="pt-br" target="_blank" rel="external">Aprendendo Física</a>
+            <a href="#"> Artigos oficiais</a>
+        </nav>
+    </header>
+    <!-- main = Conteúdo principal-->
+    <main>
+        <!-- section  = seção -> representa uma seção genérica contida em um documento HTML, geralmente com um título, quando não existir um elemento semântico mais específico para representá-lo-->
+        <section id="assuntos" >
+            <h2> Assuntos tratados pelo site</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum mollitia molestiae saepe earum tenetur quam in itaque aut consequuntur velit harum omnis sapiente similique vitae excepturi, rem totam tempore unde?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laborum dicta repudiandae odit laudantium, laboriosam exercitationem esse suscipit dolores, et magnam cupiditate. Itaque totam veritatis rerum ipsa laboriosam magnam eos!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum culpa ullam delectus reiciendis illum labore sit suscipit laboriosam dignissimos, fugiat adipisci molestias cumque quas voluptatum maiores rerum similique consectetur nostrum.</p>
+                
+            
+        </section>
+        <section id="reponsaveis">
+            <h2>Responsáveis pelo site</h2>
+            <!-- article = artigo -> serve para definir o conteúdo.-->
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fugiat pariatur velit placeat consectetur facilis. Consequuntur itaque delectus, iste, inventore magnam labore voluptatum veritatis corrupti, minima repellendus eveniet placeat maiores?</p>
+                <aside>
+                 <!-- aside = conteúdo periférico do article-->  
+                 <p>Escrito por Cleber.
+                </aside>
+            </article>
+        </section>
+    </main>
+    <!-- footer = rodapé-->
+    <footer>
+        <p>Desenvolvido por Harvard</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

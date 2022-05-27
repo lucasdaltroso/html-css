@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            /*Em vez de utilizar width: 800px; que possui pouca responsividade, utiliza-se o:
+             
+            min-width: ; -> (largura mínima da tela, ou seja, à partir do momento que se atingi um valor menor que o estipulado,  o site não se adapta mais a largura da tela, para sua responsividade.)
+            max-width: ; -> (largura máxima da tela, ou seja, à partir do momento que se atingi um valor maior que o estipulado, o site não se adapta mais a largura da tela, para sua responsividade.)
+            */
+            min-width: 280px;
+            max-width: 800px;
+
+            margin: auto; 
+            /*centraliza a margin automaticamente, de forma responsiva*/
+        }
+
+        img {
+            width: 100%; /*a largura da imagem se adapta, ocupando 100% do total da tela, ela toda.*/
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando a Responsividade</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident repellat nisi mollitia? Inventore expedita facere nesciunt dolor, eligendi incidunt impedit nisi fugiat ipsum quis, velit animi voluptatum sequi saepe id?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui mollitia cumque eius quas. Odit culpa earum odio quidem vel laborum adipisci, esse similique in soluta. Id aliquid eveniet facilis?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti aperiam dolorum beatae, similique debitis aspernatur atque velit esse quisquam commodi ad tempora aliquam eligendi provident perferendis tempore, reprehenderit, architecto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ex eius vitae, minus dignissimos modi, ullam, nesciunt nulla veritatis voluptatem ea a suscipit corrupti velit repellat perspiciatis. Beatae, fugit aliquid?</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Block">
+        </picture>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident repellat nisi mollitia? Inventore expedita facere nesciunt dolor, eligendi incidunt impedit nisi fugiat ipsum quis, velit animi voluptatum sequi saepe id?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui mollitia cumque eius quas. Odit culpa earum odio quidem vel laborum adipisci, esse similique in soluta. Id aliquid eveniet facilis?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti aperiam dolorum beatae, similique debitis aspernatur atque velit esse quisquam commodi ad tempora aliquam eligendi provident perferendis tempore, reprehenderit, architecto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ex eius vitae, minus dignissimos modi, ullam, nesciunt nulla veritatis voluptatem ea a suscipit corrupti velit repellat perspiciatis. Beatae, fugit aliquid?</p>
+        
+    </main>
+</body>
+</html>

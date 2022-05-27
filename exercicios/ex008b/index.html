@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>  
+    <h2>Código-fonte / Pré-Formatação</h2> 
+        <p>A tag &lt;code&gt;, com abertura e fechamento, é usada para dar a mesma largura para as letras. Como no exemplo: documente.get('teste') e <code>documente.get('teste')</code> </p> <!--Chamada de fonte mono-espaçada, ótima para ler códigos-->
+        <pre>
+            <code>
+                num = int(input('Digite um número'))
+                if num % 2 == 0:
+                    print(f'O número {num} é PAR')
+                else:
+                    print(f'O número {num} é Ímpar')
+                print('Fim do programa')
+            </code>
+        </pre>
+        <!--Tag <pre> é usada para demonstar a insentação, geralmente usadas para demonstar códigos de programação.-->
+        <pre>
+            <code>
+    num = int(input('Digite um número'))        <!--SHIFT + TAB-->
+    if num % 2 == 0:                            <!--TAB-->
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é Ímpar')
+    print('Fim do programa')
+            </code>
+        </pre>
+    <h2>Citações Simples</h2>
+        <p>Como diria um pai de um amigo: <q>o computador é um burro muito rápido.</q></p>   <!--A tag <q> cria aspas, mas somente usar para citações.-->
+    <h2>Citações completas</h2>
+        <p>Segundo Jeff Noble:</p>
+        <blockquote>
+            A diferença entre os elementos inline e um bloco de texto é importante. Os elements HTML nesse capítulo descrevem os blocos de texto. 
+        </blockquote> 
+        <!--A tag <Blockquote> é usada para criar uma citação mais longa, geralmente de escritores.-->
+        <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=0">
+            A diferença entre os elementos inline e um bloco de texto é importante. Os elements HTML nesse capítulo descrevem os blocos de texto.
+        </blockquote>
+    <h2>Abreviações</h2> 
+        <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!!</p> 
+        <!--A tag <abbr> é usada para indicar o nome completo da abreviação--> 
+    <h2>Texto invertido</h2>
+        <p> <bdo dir="rtl">Estou aprendendo a criar coisas em HTML </bdo></p> 
+        <!--Só uma brincadeirinha com as palavras deixando elas invertidas.-->                 
+</body>
+</html>

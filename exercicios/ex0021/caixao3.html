@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Personalizada</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        h1 {
+            border: 10px solid transparent; /*transparent - deixa a borda transparente, assim não atrapalha a borda personalizada.*/
+            padding: 6px;
+            margin-right: 1px; ;
+            /*Para colocar bordas personalizadas (imagens).*/ 
+            /*Bordas personalizadas nem sempre são compatíveis com todos os navegadores.*/
+            /*
+            Shorthand
+            border-image: url('borda.png') 29 repeat;
+            */
+            border-image-source: url('borda.png');
+            border-image-slice: 29;
+            border-image-repeat: repeat;
+            /*
+            border-image-repeat: stretch; -> alonga as linhas
+            border-image-repeat: repeat; -> repete a imagem.
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando borda personalizada</h1>
+</body>
+</html>

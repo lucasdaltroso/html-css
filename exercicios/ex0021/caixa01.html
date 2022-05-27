@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+            /* Shorthand
+            border: (width) (style) (color);
+            border: 10px solid black;
+            */
+            
+            /*padding sempre no sentido horário -> padding-top -> padding-right -> padding-bottom -> padding-left.*/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*Shorthand
+            padding: (top) (right) (bottom) (left);
+            padding: 10px 10px 10px 10px;
+                ou 
+            padding: 10px; --> 10px para todas as direções
+            padding: 10px 20px; --> top/bottom - 10px e right/left - 20px.
+            */
+    
+
+           /* margin: auto; -> centraliza a caixa*/
+           /* margin sempre no sentido horário*/
+           margin-top: 10px;
+           margin-right: 10px;
+           margin-bottom: 30px;
+           margin-left: 10px;
+           /*Shorhand
+           margin: (top) (right) (bottom) (left);
+           margin: 10px 10px 30px 10px;
+
+           Centralizando a caixa com shorhand:
+           margin: 10px auto 10px auto; -> margem da esquerda e direita centralizadas automaticamente na tela.
+           */
+
+           outline-width: 5px;
+           outline-style: dashed;
+           outline-color: blue;
+
+        } 
+        /*Pode-se transformar uma caixa que seja por padrão box-level em inline-level e vice-versa.
+        basta utilizar -->          display:block;   (box-level)
+        display: inline; (inline-level)
+
+        Também existe o display: inline-block;
+        é uma caixa com característica de inline-level e box-level: fica na mesma linha (inline-level) e pode-se definir o tamanho da caixa (box-level).
+        */
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+        }
+
+        /*border-style -> solid (linha reta), dashed (linha pontilhada), dotted (linha de pontos), double (linha dupla), groove (linha meio tridimensional)*/
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de caixas box-level, mas os <a href="#">links são exemplos de caixas inline-level.</a> Vamos ver como tudo isso funciona.</p>
+
+    <!--User agent = navegador-->
+</body>
+</html>
+

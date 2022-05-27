@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png"> <!--Quando chegar a menos de 750 px será carregada a imagem pequena.-->
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png"> <!-- Quando chegar a menos de 1050 px será carregada a imagem média.-->
+        <img src="images/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Você pode reproduzir um áudio no seu site</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay ></audio>
+    <!-- MP3 - OGG - WAV (não usar esse formato de áudio, pois é muito pesado.)-->
+    <audio preload="metadata" controls loop  > <!--Preload auto: o site só vai terminar de carregar após terminar de carregar o áudio (não usar). Preload metadata: só vai carregar algumas informações do arquivo, como duração. Preload none: não vai carregar nada até o usuário apertar o play.-->
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg"> <!--Se o MP3 não funcionar, o navegador tenta abrir o arquivo ogg-->
+        <source src="midia/happy-mistake.ogg" type="audio/ogg"> <!--Se o OGG não funcionar, o navegador tenta abrir o arquivo WAV-->
+        <source src="midia/happy-mistake.wav" type="audio/wav"> <!--Se o WAV não funcionar, o navegador exibirá essa mensagem: -->
+        <p>Infelizmente, seu navegador não é compatível com áudio, mas você pode baixar o arquivo clicando <a href="midia/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mpeg">aqui</a></p>
+    </audio>
+    <audio preload="none" controls loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
