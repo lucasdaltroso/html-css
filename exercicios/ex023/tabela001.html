@@ -11,6 +11,7 @@
         }
 
         table {
+            height: 400px;
             width: 400px;
             /*border-collapse: separate (mantém as células separadas)
             collapse (junta as bordas das células)            
@@ -18,14 +19,19 @@
             border-collapse: collapse;
         }
 
-        tr.linha {
-            background-color: lightgray;
-        }
 
         td {
+            text-align: center; /*Alinhamento horizontal*/
+            vertical-align: middle; /*Alinhamento vertical*/
+            /*vertical-align: top(cima) - middle(meio)/padrão - bottom(baixo)*/
             border: 1px solid black;
             padding: 8px;
         }
+
+        td.numero {
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
@@ -49,7 +55,7 @@
                 <td>B1</td>
                 <td>C1</td>
             </tr>
-            <tr class="linha">
+            <tr>
                 <td>A2</td>
                 <td>B2</td>
                 <td>C2</td>
@@ -57,12 +63,12 @@
             <tr>
                 <td>A3</td>
                 <td>B3</td>
-                <td>C3</td>
+                <td class="numero">C3</td>
             </tr>
-            <tr class="linha">
+            <tr>
                 <td>A4</td>
                 <td>B4</td>
-                <td>C4</td>
+                <td class="numero">C4</td>
             </tr>
         </table>
 <!-- Se a hierarquia da tabela não for seguida, os dados vão aparecer ou antes ou depois da tabela.-->
