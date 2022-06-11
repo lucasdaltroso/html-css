@@ -13,6 +13,7 @@
         table {
             border-collapse: collapse;
             width: 600px;
+            position: relative;
         }
 
         caption {
@@ -22,9 +23,34 @@
             padding: 10px;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         thead {
             background-color: gray;
             color: white;
+        }
+
+        /*pseudo classe para efeito zebrado
+        :nth-child( número "n" ) -> 2 siginifica que ele pula uma linha e na próxima ele faz a configuração desejada
+
+        :nth-child(odd/ 2n-1) -> significa linhas ímpares, ou seja, linha 1, 3,5,7 e assim por diante
+
+        :nth-child(even) ->significa linhas pares, ou seja, linha 2, 4, 6, 8 e assim por diante
+        
+        */
+
+        /* se você colocar 1n, ele irá pintar todas as linhas.*/
+        tbody tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: white;
+            text-align: right;
         }
 
         td {
@@ -202,5 +228,20 @@
             </tr>
         </tfoot>
     </table>
+    <!--Para facilitar a achar dados em tabelas muito grandes, com muitas colunas, se usa o efeito zebrado, que consiste em colocar um linha de uma cor e outra de outra e assim por diante.-->
+
+    <!-- Cabeçalho Fixo não é uma configuração que está funcionando em todos os navegadores. É útil quando a tabela tem muitas linhas.-->
+    <!--Cabeçalho Fixo: significa que quando rolar o site para baixo o cabeçalho da tabela se manterá fixo na sua posição e somente as linhas irão se mexer.-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae atque non sit repellendus voluptatibus aspernatur quas autem repudiandae nisi blanditiis, quo distinctio sed ullam nihil omnis facilis magni natus possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis ut consectetur fugiat voluptates accusamus omnis exercitationem esse minima modi veritatis ab laudantium, repellendus ea a quos excepturi quidem Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, error inventore iure quae libero exercitationem odio mollitia aperiam, consequuntur, repellat iste commodi dolorem ex officia laborum. Magni eaque architecto labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quos laudantium quam blanditiis possimus nisi, dignissimos facere perspiciatis ducimus excepturi quas eum culpa non quo facilis ea. Sapiente, inventore asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta repellendus impedit consequuntur, rem accusamus illum placeat esse quasi repudiandae laboriosam molestias nam nesciunt repellat corporis dolorum in non necessitatibus.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae atque non sit repellendus voluptatibus aspernatur quas autem repudiandae nisi blanditiis, quo distinctio sed ullam nihil omnis facilis magni natus possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis ut consectetur fugiat voluptates accusamus omnis exercitationem esse minima modi veritatis ab laudantium, repellendus ea a quos excepturi quidem Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, error inventore iure quae libero exercitationem odio mollitia aperiam, consequuntur, repellat iste commodi dolorem ex officia laborum. Magni eaque architecto labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quos laudantium quam blanditiis possimus nisi, dignissimos facere perspiciatis ducimus excepturi quas eum culpa non quo facilis ea. Sapiente, inventore asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta repellendus impedit consequuntur, rem accusamus illum placeat esse quasi repudiandae laboriosam molestias nam nesciunt repellat corporis dolorum in non necessitatibus.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae atque non sit repellendus voluptatibus aspernatur quas autem repudiandae nisi blanditiis, quo distinctio sed ullam nihil omnis facilis magni natus possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis ut consectetur fugiat voluptates accusamus omnis exercitationem esse minima modi veritatis ab laudantium, repellendus ea a quos excepturi quidem Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, error inventore iure quae libero exercitationem odio mollitia aperiam, consequuntur, repellat iste commodi dolorem ex officia laborum. Magni eaque architecto labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quos laudantium quam blanditiis possimus nisi, dignissimos facere perspiciatis ducimus excepturi quas eum culpa non quo facilis ea. Sapiente, inventore asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta repellendus impedit consequuntur, rem accusamus illum placeat esse quasi repudiandae laboriosam molestias nam nesciunt repellat corporis dolorum in non necessitatibus.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae atque non sit repellendus voluptatibus aspernatur quas autem repudiandae nisi blanditiis, quo distinctio sed ullam nihil omnis facilis magni natus possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis ut consectetur fugiat voluptates accusamus omnis exercitationem esse minima modi veritatis ab laudantium, repellendus ea a quos excepturi quidem Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, error inventore iure quae libero exercitationem odio mollitia aperiam, consequuntur, repellat iste commodi dolorem ex officia laborum. Magni eaque architecto labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quos laudantium quam blanditiis possimus nisi, dignissimos facere perspiciatis ducimus excepturi quas eum culpa non quo facilis ea. Sapiente, inventore asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta repellendus impedit consequuntur, rem accusamus illum placeat esse quasi repudiandae laboriosam molestias nam nesciunt repellat corporis dolorum in non necessitatibus.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae atque non sit repellendus voluptatibus aspernatur quas autem repudiandae nisi blanditiis, quo distinctio sed ullam nihil omnis facilis magni natus possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis ut consectetur fugiat voluptates accusamus omnis exercitationem esse minima modi veritatis ab laudantium, repellendus ea a quos excepturi quidem Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, error inventore iure quae libero exercitationem odio mollitia aperiam, consequuntur, repellat iste commodi dolorem ex officia laborum. Magni eaque architecto labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quos laudantium quam blanditiis possimus nisi, dignissimos facere perspiciatis ducimus excepturi quas eum culpa non quo facilis ea. Sapiente, inventore asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta repellendus impedit consequuntur, rem accusamus illum placeat esse quasi repudiandae laboriosam molestias nam nesciunt repellat corporis dolorum in non necessitatibus.
+    </p>
 </body>
 </html>
