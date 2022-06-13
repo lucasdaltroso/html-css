@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Colunas de Tabela</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+         }
+
+         table {
+            border-collapse: collapse;
+            width: 600px;
+         }
+
+         td, th {
+            border: 1px solid black;
+            padding: 10px;
+         }
+
+         col.nome {
+            background-color: green;
+         }
+
+         col.sexo {
+            background-color: blue;
+         }
+    </style>
+</head>
+<body>
+    <h1>Mexendo nas colunas da tabela</h1>
+    <table>
+        <colgroup>
+            <col class="nome"> <!--Primiera coluna da tabela-->
+            <col class="idade"> <!--Segunda coluna da tabela-->
+            <col class="sexo" span="2"> <!--Terceira coluna da tabela-->
+            <!--Span = quantidade de colunas-->
+        </colgroup> 
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Sexo</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>23</td>
+            <td>F</td>
+            <td>Reporter</td>
+        </tr>
+        <tr>
+            <td>José</td>
+            <td>45</td>
+            <td>M</td>
+            <td>Pedreiro</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>39</td>
+            <td>F</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>15</td>
+            <td>M</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Victor</td>
+            <td>67</td>
+            <td>M</td>
+            <td>Dentista</td>
+        </tr>
+        <tr>
+            <td>Fernanda</td>
+            <td>34</td>
+            <td>F</td>
+            <td>Secretária</td>
+        </tr>
+        <tr>
+            <td>Livia</td>
+            <td>40</td>
+            <td>F</td>
+            <td>Barman</td>
+        </tr>
+        <tr>
+            <td>Roger</td>
+            <td>59</td>
+            <td>M</td>
+            <td>Pintor</td>
+        </tr>
+        <tr>
+            <td>Marcos</td>
+            <td>57</td>
+            <td>M</td>
+            <td>Eletricista</td>
+        </tr>
+        <tr>
+            <td>Paula</td>
+            <td>F</td>
+            <td>56</td>
+            <td>Jornalista</td>
+        </tr>
+    </table>
+</body>
+</html>
